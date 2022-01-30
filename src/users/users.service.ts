@@ -8,4 +8,8 @@ export class UsersService {
   create(newUser: User) {
     this.users.push(newUser);
   }
+
+  findAll(): User[] {
+    return this.users;
+  }
 }
